@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="547.0" style="-fx-background-color: violet;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursachclient.DecanatMenuController">
+   <children>
+      <Label layoutX="68.0" layoutY="24.0" text="Добро пожаловать, деканат" textFill="#b003bf">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="82.0" text="Главное меню" textFill="#b113bf">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="198.0" layoutY="243.0" mnemonicParsing="false" onAction="#Exit" prefHeight="34.0" prefWidth="141.0" text="Выйти">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="198.0" layoutY="187.0" mnemonicParsing="false" onAction="#ChangePass" prefHeight="34.0" prefWidth="141.0" text="Изменить пароль" />
+      <Button layoutX="198.0" layoutY="130.0" mnemonicParsing="false" onAction="#RabGroup" prefHeight="34.0" prefWidth="141.0" text="Работа с группами">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

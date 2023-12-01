@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: violet;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursachclient.RedPolsControl">
+   <children>
+      <TableView fx:id="Users" layoutX="17.0" layoutY="54.0" prefHeight="305.0" prefWidth="424.0">
+        <columns>
+          <TableColumn fx:id="LogCol" prefWidth="64.0" text="Логин" />
+          <TableColumn fx:id="FIOCol" prefWidth="194.0" text="ФИО" />
+            <TableColumn fx:id="PassCol" prefWidth="64.0" text="Пароль" />
+            <TableColumn fx:id="RoleCol" prefWidth="101.0" text="Роль" />
+        </columns>
+      </TableView>
+      <Button fx:id="Delete" layoutX="531.0" layoutY="231.0" mnemonicParsing="false" onAction="#Delpols" prefHeight="19.0" prefWidth="69.0" text="Удалить " />
+      <Button fx:id="Add" layoutX="450.0" layoutY="231.0" mnemonicParsing="false" onAction="#Addpols" text="Добавить" />
+      <Label layoutX="17.0" layoutY="9.0" text="Пользователи" textFill="#81088a">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Login" layoutX="451.0" layoutY="54.0" promptText="Логин" />
+      <TextField fx:id="FIO" layoutX="451.0" layoutY="97.0" promptText="ФИО" />
+      <TextField fx:id="Password" layoutX="451.0" layoutY="139.0" promptText="Пароль" />
+      <ComboBox fx:id="Role" layoutX="450.0" layoutY="188.0" prefWidth="150.0" promptText="Роль" visibleRowCount="4" />
+      <Button layoutX="451.0" layoutY="334.0" mnemonicParsing="false" onAction="#Menu" text="Вернуться в меню" />
+      <Label fx:id="OshLog" layoutX="451.0" layoutY="35.0" textFill="#ff0909" />
+      <Label fx:id="OshPass" layoutX="453.0" layoutY="122.0" textFill="#ff0909" />
+      <Label fx:id="OshRole" layoutX="452.0" layoutY="171.0" textFill="#ff0909" />
+      <Label fx:id="Osh" layoutX="452.0" layoutY="265.0" textFill="#ff0909" />
+      <Label fx:id="Osh1" layoutX="451.0" layoutY="282.0" textFill="#ff0909" />
+   </children>
+</Pane>

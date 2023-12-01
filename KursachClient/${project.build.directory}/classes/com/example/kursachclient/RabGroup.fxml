@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: violet;" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.example.kursachclient.RabGroupController">
+  <tabs>
+    <Tab text="Работа со студенами группы">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="StudentView1" layoutX="19.0" layoutY="17.0" onMouseClicked="#Update12" prefHeight="334.0" prefWidth="373.0">
+                    <columns>
+                      <TableColumn fx:id="NColumn1" prefWidth="27.0" text="№" />
+                      <TableColumn fx:id="FIOColumn" prefWidth="233.0" text="ФИО" />
+                        <TableColumn fx:id="FormaObuchColumn" prefWidth="112.0" text="Форма обучения" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="Familia1" layoutX="420.0" layoutY="78.0" />
+                  <TextField fx:id="Name1" layoutX="420.0" layoutY="124.0" />
+                  <TextField fx:id="Otchestvo1" layoutX="420.0" layoutY="166.0" />
+                  <Label layoutX="420.0" layoutY="61.0" text="Фамилия " />
+                  <Label layoutX="420.0" layoutY="107.0" text="Имя" />
+                  <Label layoutX="420.0" layoutY="149.0" text="Отчество" />
+                  <Button layoutX="422.0" layoutY="253.0" mnemonicParsing="false" onAction="#Add1" text="Добавить" />
+                  <Button fx:id="RedButton1" layoutX="422.0" layoutY="289.0" mnemonicParsing="false" onAction="#Red1" text="Редактировать" />
+                  <Button layoutX="420.0" layoutY="326.0" mnemonicParsing="false" onAction="#Menu" text="Вернуться в главное меню" />
+                  <Button layoutX="509.0" layoutY="253.0" mnemonicParsing="false" onAction="#Del1" text="Удалить" />
+                  <Label layoutX="418.0" layoutY="17.0" text="Группа" />
+                  <ComboBox fx:id="Group1" editable="true" layoutX="419.0" layoutY="34.0" onAction="#Update1" prefWidth="150.0" />
+                  <RadioButton fx:id="Platnoe" layoutX="499.0" layoutY="221.0" mnemonicParsing="false" text="Платное" />
+                  <RadioButton fx:id="Bydzhet" layoutX="422.0" layoutY="214.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="79.0" text="Бюджет" />
+                  <Label layoutX="423.0" layoutY="197.0" text="Форма обучения:" />
+               </children>
+            </Pane>
+         </content>
+    </Tab>
+    <Tab text="Работа с предметами группы">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="420.0" layoutY="326.0" mnemonicParsing="false" onAction="#Menu" text="Вернуться в главное меню" />
+                  <TableView fx:id="PredmetView2" layoutX="30.0" layoutY="24.0" onMouseClicked="#Update22" prefHeight="325.0" prefWidth="339.0">
+                    <columns>
+                      <TableColumn fx:id="NColumn2" prefWidth="30.0" text="№" />
+                      <TableColumn fx:id="PredmetColumn2" prefWidth="67.0" text="Предмет" />
+                        <TableColumn fx:id="FIOColumn2" prefWidth="241.0" text="ФИО Преподавателя" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="393.0" layoutY="24.0" text="Группа" />
+                  <Label layoutX="393.0" layoutY="74.0" text="ФИО Преподавателя" />
+                  <Label layoutX="393.0" layoutY="127.0" text="Название предмета" />
+                  <ComboBox fx:id="FIO2" layoutX="393.0" layoutY="91.0" prefHeight="25.0" prefWidth="184.0" />
+                  <TextField fx:id="Pred2" layoutX="393.0" layoutY="144.0" prefHeight="25.0" prefWidth="185.0" />
+                  <Button layoutX="393.0" layoutY="187.0" mnemonicParsing="false" onAction="#Add2" text="Добавить" />
+                  <Button layoutX="393.0" layoutY="227.0" mnemonicParsing="false" onAction="#Del2" text="Удалить" />
+                  <Button fx:id="RedButton2" layoutX="478.0" layoutY="187.0" mnemonicParsing="false" onAction="#Red2" text="Редактировать" />
+                  <ComboBox fx:id="Group2" editable="true" layoutX="393.0" layoutY="41.0" onAction="#Update2" prefHeight="25.0" prefWidth="184.0" />
+               </children>
+            </Pane>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>

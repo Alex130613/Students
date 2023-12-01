@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="529.0" style="-fx-background-color: violet;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursachclient.PrepodMenuController">
+   <children>
+      <Button layoutX="191.0" layoutY="141.0" mnemonicParsing="false" onAction="#RabOcenki" prefHeight="25.0" prefWidth="147.0" text="Работать с оценками" />
+      <Button layoutX="191.0" layoutY="184.0" mnemonicParsing="false" onAction="#Change" prefHeight="25.0" prefWidth="147.0" text="Изменить пароль" />
+      <Button layoutX="191.0" layoutY="229.0" mnemonicParsing="false" onAction="#Exit" prefHeight="25.0" prefWidth="147.0" text="Выйти" />
+      <Label layoutX="36.0" layoutY="32.0" text="Добро пожаловать, Преподаватель" textFill="#9011a1">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="83.0" text="Главное меню" textFill="#7e0dab">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

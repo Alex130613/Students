@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="514.0" style="-fx-background-color: violet;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursachclient.BugalterMenuController">
+   <children>
+      <Button layoutX="142.0" layoutY="159.0" mnemonicParsing="false" onAction="#Otchet" prefHeight="31.0" prefWidth="231.0" text="Получить отчёт о стипендиях">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="140.0" layoutY="209.0" mnemonicParsing="false" onAction="#ChangePass" prefHeight="31.0" prefWidth="231.0" text="Изменить пароль">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="140.0" layoutY="257.0" mnemonicParsing="false" onAction="#Exit" prefHeight="31.0" prefWidth="231.0" text="Выйти">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="58.0" layoutY="22.0" text="Добро пожаловать, бухгалтер" textFill="#7210ab">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="72.0" text="Главное меню" textFill="#7210ab">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="141.0" layoutY="115.0" mnemonicParsing="false" onAction="#Grafic" text="График соотношения по стипендии">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

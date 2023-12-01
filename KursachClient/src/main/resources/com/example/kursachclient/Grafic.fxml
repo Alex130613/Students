@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="600.0" style="-fx-background-color: violet;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursachclient.GraficController">
+   <children>
+      <PieChart fx:id="GrafStip" prefHeight="347.0" prefWidth="421.0" title="Соотношение студентов по размеру стипендии" />
+      <Button layoutX="460.0" layoutY="292.0" mnemonicParsing="false" onAction="#Menu" text="Вернуться в меню" />
+      <Label layoutX="433.0" layoutY="35.0" text="Группа:" />
+      <ComboBox fx:id="Group" layoutX="433.0" layoutY="52.0" onAction="#Change" prefWidth="150.0" promptText="Группа" />
+   </children>
+</Pane>
